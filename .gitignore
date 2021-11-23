@@ -1,0 +1,9 @@
+# Dependency directories
+node_modules/
+
+# temp files
+*.log
+
+# nightwatch files
+report/
+screenshots/

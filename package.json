@@ -1,0 +1,44 @@
+{
+  "name": "base-nightwatch-cucumber-javascript",
+  "version": "1.0.0",
+  "description": "BDD base project: Nightwatch + Cucumber + Javascript",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "rm -rf report/ screenshots/; mkdir report/",
+    "test": "cucumber-js --require cucumber.conf.js --require features/step_definitions --format json:report/cucumber_report.json",
+    "tag:smoke": "npm run test -- --tags '@smoke'",
+    "lint": "eslint . --ext .js,.json",
+    "lint:fix": "npm run lint -- --fix"
+  },
+  "keywords": [
+    "BDD",
+    "cucumber",
+    "nightwatch",
+    "javascript",
+    "qa",
+    "testing"
+  ],
+  "author": {
+    "name": "Erik Ccanto",
+    "email": "ccanto.erik@gmail.com",
+    "url": "https://github.com/eccanto"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "cucumber": "^7.0.0-rc.0"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^8.0.0-rc.1",
+    "cucumber-html-reporter": "^5.5.0",
+    "geckodriver": "^2.0.4",
+    "nightwatch": "^1.7.12",
+    "nightwatch-api": "^3.0.2",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jsonc": "^2.0.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.1"
+  }
+}
