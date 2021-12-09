@@ -1,3 +1,4 @@
+@duckduckgo
 Feature: Search engine on the Duckduckgo website
 
   Background:
@@ -6,14 +7,14 @@ Feature: Search engine on the Duckduckgo website
 
   @smoke
   Scenario: Using the search input with the text "smoke test"
-    Given I fill the search input with the "smoke test" term on the Duckduckgo page
-    When I click on the search button on the Duckduckgo page
-    Then the text "What is Smoke Testing?" should be visible on the result page on the Duckduckgo page
+    Given I fill the search input with the "smoke test" term on the Search Engine page
+    When I click on the search button on the Search Engine page
+    Then the text "What is Smoke Testing?" should be visible on the result page on the Search Engine page
 
   Scenario Outline: Using the search input with the text "<search_text>"
-    Given I fill the search input with the "<search_text>" term on the Duckduckgo page
-    When I click on the search button on the Duckduckgo page
-    Then the text "<expected_text>" should be visible on the result page on the Duckduckgo page
+    Given I fill the search input with the "<search_text>" term on the Search Engine page
+    When I click on the search button on the Search Engine page
+    Then the text "<expected_text>" should be visible on the result page on the Search Engine page
 
     Examples:
       | search_text | expected_text  |
