@@ -22,7 +22,6 @@ Basic example of using Nightwatch with Cucumber (BDD). This `Gherkin` example in
     * [Fix Automatically](#fix-automatically)
 * [Issues](#issues)
 * [License](#license)
-* [Changelog](#changelog)
 
 # Get started
 
@@ -102,7 +101,3 @@ npm run lint:fix
 # License
 
 [MIT](./LICENSE)
-
-# Changelog
-
-- 1.0.0 - Initial version.

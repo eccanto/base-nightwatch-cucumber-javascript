@@ -29,9 +29,5 @@ module.exports = {
                 asyncArrow: 'always'
             }
         ]
-    },
-    globals: {
-        cy: 'readonly',
-        expect: 'readonly'
     }
 };
