@@ -18,10 +18,6 @@ class BaseSearchEngine {
         }
     }
 
-    say() {
-        throw new Error("Method 'say()' must be implemented.");
-    }
-
     load() {
         return client.url(this._url).waitForElementVisible('body', 1000);
     }
