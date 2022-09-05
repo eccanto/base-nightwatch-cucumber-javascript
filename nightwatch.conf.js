@@ -3,7 +3,7 @@ const geckodriver = require('geckodriver');
 module.exports = {
     src_folders: ['tests'],
 
-    webdriver: {
+    selenium: {
         start_process: true,
         port: 4444,
         server_path: geckodriver.path

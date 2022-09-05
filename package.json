@@ -25,11 +25,10 @@
   },
   "license": "MIT",
   "dependencies": {
-    "chai": "^4.3.4",
-    "cucumber": "^7.0.0-rc.0"
+    "chai": "^4.3.6"
   },
   "devDependencies": {
-    "@cucumber/cucumber": "^8.0.0-rc.1",
+    "@cucumber/cucumber": "^8.5.2",
     "babel-eslint": "^10.1.0",
     "cucumber-html-reporter": "^5.5.0",
     "eslint": "^7.32.0",
@@ -38,8 +37,7 @@
     "eslint-plugin-jsonc": "^2.0.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.1",
-    "geckodriver": "^2.0.4",
-    "nightwatch": "^1.7.12",
-    "nightwatch-api": "^3.0.2"
+    "geckodriver": "^3.0.2",
+    "nightwatch": "^2.3.4"
   }
 }

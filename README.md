@@ -22,6 +22,7 @@ Basic example of using Nightwatch with Cucumber (BDD). This `Gherkin` example in
     * [Fix Automatically](#fix-automatically)
 * [Issues](#issues)
 * [License](#license)
+* [Changelog](#changelog)
 
 # Get started
 
@@ -101,3 +102,9 @@ npm run lint:fix
 # License
 
 [MIT](./LICENSE)
+
+# Changelog
+
+- v1.0.0 - Initial release.
+- v1.1.0 - Delete Nightwatch-api, this package is deprecated in favour of Nightwatch v2.
+
