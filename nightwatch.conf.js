@@ -1,32 +1,25 @@
-const geckodriver = require('geckodriver');
+const chromedriver = require('chromedriver');
 
 module.exports = {
-    src_folders: ['tests'],
+    src_folders: ['features/step_definitions'],
 
-    selenium: {
-        start_process: true,
-        port: 4444,
-        server_path: geckodriver.path
+    test_runner: {
+        type: 'cucumber',
+        options: {
+          feature_path: 'features/specs/*.feature'
+        }
     },
 
     test_settings: {
         default: {
-            launch_url: 'https://nightwatchjs.org',
             desiredCapabilities: {
-                browserName: 'firefox',
-                alwaysMatch: {
-                    'moz:firefoxOptions': {
-                        args: [
-                            '-headless'
-                        ]
-                    }
-                }
+                browserName: 'chrome'
             },
-            screenshots: {
-                enabled: true,
-                on_failure: true,
-                on_error: true,
-                path: './screenshots/'
+            webdriver: {
+                start_process: true,
+                server_path: chromedriver.path,
+                port: 4444,
+                cli_args: ['--port=4444']
             }
         }
     }

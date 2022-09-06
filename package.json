@@ -4,8 +4,8 @@
   "description": "BDD base project: Nightwatch + Cucumber + Javascript",
   "main": "index.js",
   "scripts": {
-    "pretest": "rm -rf report/ screenshots/; mkdir report/",
-    "test": "cucumber-js --require cucumber.conf.js --require features/step_definitions --format json:report/cucumber_report.json",
+    "pretest": "rm -rf screenshots/;",
+    "test": "npx nightwatch",
     "tag:smoke": "npm run test -- --tags '@smoke'",
     "lint": "eslint . --ext .js,.json",
     "lint:fix": "npm run lint -- --fix"
@@ -30,14 +30,13 @@
   "devDependencies": {
     "@cucumber/cucumber": "^8.5.2",
     "babel-eslint": "^10.1.0",
-    "cucumber-html-reporter": "^5.5.0",
+    "chromedriver": "^102.0.0",
     "eslint": "^7.32.0",
     "eslint-config-standard": "^16.0.3",
     "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-jsonc": "^2.0.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.1",
-    "geckodriver": "^3.0.2",
     "nightwatch": "^2.3.4"
   }
 }
