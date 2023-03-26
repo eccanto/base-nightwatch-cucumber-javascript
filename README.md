@@ -41,22 +41,14 @@ npm test
 ```
 
 ```bash
-6 scenarios (6 passed)
-30 steps (30 passed)
-0m32.161s (executing steps: 0m27.856s)
-
-generating report (2 features)...
-
-🚀 Cucumber HTML report report/cucumber_report.html generated successfully 👍
+3 scenarios (3 passed)
+15 steps (15 passed)
+0m10.847s (executing steps: 0m10.827s)
 ```
 
-- **`./report/ folder`**:
+**`HTML report`**:
 
-  ![Output](./images/general_output.png "VSCode Side Bar")
-
-- **`HTML report`**:
-
-  ![Report](./images/general_report.png "Cucumber HTML report")
+![Report](./documentation/images/report_html.png "Cucumber HTML report")
 
 ## Running tagged tests
 
@@ -95,16 +87,6 @@ Many problems ESLint finds can be automatically fixed.
 npm run lint:fix
 ```
 
-# Issues
-
-*github*: [see full list](https://github.com/cucumber/cucumber-js/issues)
-
 # License
 
 [MIT](./LICENSE)
-
-# Changelog
-
-- v1.0.0 - Initial release.
-- v1.1.0 - Delete Nightwatch-api, this package is deprecated in favour of Nightwatch v2.
-

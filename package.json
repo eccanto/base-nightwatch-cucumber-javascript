@@ -2,12 +2,12 @@
   "name": "base-nightwatch-cucumber-javascript",
   "version": "1.0.0",
   "description": "BDD base project: Nightwatch + Cucumber + Javascript",
-  "main": "index.js",
+  "main": "",
   "scripts": {
-    "pretest": "rm -rf screenshots/;",
-    "test": "npx nightwatch",
-    "tag:smoke": "npm run test -- --tags '@smoke'",
-    "lint": "eslint . --ext .js,.json",
+    "pretest": "rm -rf screenshots/ report/; mkdir report/",
+    "test": "npx nightwatch --format html:report/cucumber-report.html",
+    "tag:smoke": "npm test -- --tags '@smoke'",
+    "lint": "eslint .",
     "lint:fix": "npm run lint -- --fix"
   },
   "keywords": [
@@ -25,18 +25,19 @@
   },
   "license": "MIT",
   "dependencies": {
-    "chai": "^4.3.6"
+    "@cucumber/cucumber": "9.0.1",
+    "chai": "4.3.7",
+    "chromedriver": "111.0.0",
+    "nightwatch": "2.6.19"
   },
   "devDependencies": {
-    "@cucumber/cucumber": "^8.5.1",
-    "babel-eslint": "^10.1.0",
-    "chromedriver": "^105.0.0",
-    "eslint": "^7.32.0",
-    "eslint-config-standard": "^16.0.3",
-    "eslint-plugin-import": "^2.25.3",
-    "eslint-plugin-jsonc": "^2.0.0",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^5.1.1",
-    "nightwatch": "^2.3.4"
+    "@babel/core": "^7.21.3",
+    "@babel/eslint-parser": "^7.21.3",
+    "eslint": "8.36.0",
+    "eslint-config-standard": "17.0.0",
+    "eslint-plugin-import": "2.27.5",
+    "eslint-plugin-jsonc": "2.7.0",
+    "eslint-plugin-node": "11.1.0",
+    "eslint-plugin-promise": "6.1.1"
   }
 }
