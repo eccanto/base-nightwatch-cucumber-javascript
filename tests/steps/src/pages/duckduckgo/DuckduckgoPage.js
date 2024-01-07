@@ -1,9 +1,9 @@
 class DuckduckgoPage {
   _url = 'https://duckduckgo.com/'
 
-  _inputSearch = '#search_form_input_homepage'
-  _btnSearch = '#search_button_homepage'
-  _resultSearch = '#links'
+  _inputSearch = '#searchbox_input'
+  _btnSearch = '#searchbox_homepage button[type="submit"]'
+  _resultSearch = '#react-layout [data-testid="mainline"]'
 
   load() {
     return browser.url(this._url).waitForElementVisible('body', 1000)
@@ -28,4 +28,3 @@ class DuckduckgoPage {
 }
 
 module.exports = DuckduckgoPage
-
