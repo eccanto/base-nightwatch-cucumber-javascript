@@ -26,7 +26,7 @@
   "license": "MIT",
   "dependencies": {
     "@cucumber/cucumber": "10.2.1",
-    "chai": "5.0.0",
+    "@nightwatch/chai": "^5.0.2",
     "chromedriver": "120.0.1",
     "nightwatch": "3.3.7"
   },

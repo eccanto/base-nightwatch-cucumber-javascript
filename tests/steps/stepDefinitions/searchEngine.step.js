@@ -1,5 +1,5 @@
 const { Given, Then, When } = require('@cucumber/cucumber')
-const expect = require('chai').expect
+const { expect } = require('@nightwatch/chai')
 
 const DuckDuckGoPage = require('../src/pages/duckduckgo/DuckduckgoPage')
 
