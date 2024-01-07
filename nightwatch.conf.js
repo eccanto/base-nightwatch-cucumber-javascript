@@ -1,3 +1,17 @@
+require('@babel/register')({
+    presets: [
+        [
+            "@babel/preset-env",
+            {
+                "targets": {
+                    "node": "current"
+                }
+            }
+        ],
+        "@babel/preset-modules"
+    ]
+});
+
 const chromedriver = require('chromedriver')
 
 module.exports = {

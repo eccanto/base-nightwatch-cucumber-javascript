@@ -25,6 +25,7 @@
   },
   "license": "MIT",
   "dependencies": {
+    "@babel/register": "^7.23.7",
     "@cucumber/cucumber": "10.2.1",
     "@nightwatch/chai": "^5.0.2",
     "chromedriver": "120.0.1",
@@ -33,6 +34,9 @@
   "devDependencies": {
     "@babel/core": "^7.23.7",
     "@babel/eslint-parser": "^7.23.3",
+    "@babel/preset-env": "^7.23.7",
+    "@babel/preset-modules": "^0.1.6",
+    "babel-loader": "^9.1.3",
     "eslint": "8.56.0",
     "eslint-config-standard": "17.1.0",
     "eslint-plugin-import": "2.29.1",
