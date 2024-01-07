@@ -25,18 +25,18 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@cucumber/cucumber": "9.0.1",
-    "chai": "4.3.7",
-    "chromedriver": "111.0.0",
-    "nightwatch": "2.6.19"
+    "@cucumber/cucumber": "10.2.1",
+    "chai": "5.0.0",
+    "chromedriver": "120.0.1",
+    "nightwatch": "3.3.7"
   },
   "devDependencies": {
-    "@babel/core": "^7.21.3",
-    "@babel/eslint-parser": "^7.21.3",
-    "eslint": "8.36.0",
-    "eslint-config-standard": "17.0.0",
-    "eslint-plugin-import": "2.27.5",
-    "eslint-plugin-jsonc": "2.7.0",
+    "@babel/core": "^7.23.7",
+    "@babel/eslint-parser": "^7.23.3",
+    "eslint": "8.56.0",
+    "eslint-config-standard": "17.1.0",
+    "eslint-plugin-import": "2.29.1",
+    "eslint-plugin-jsonc": "2.11.2",
     "eslint-plugin-node": "11.1.0",
     "eslint-plugin-promise": "6.1.1"
   }

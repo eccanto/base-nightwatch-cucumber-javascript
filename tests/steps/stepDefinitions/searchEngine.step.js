@@ -1,7 +1,7 @@
 const { Given, Then, When } = require('@cucumber/cucumber')
 const expect = require('chai').expect
 
-const DuckDuckGoPage = require('./pages/DuckduckgoPage')
+const DuckDuckGoPage = require('../src/pages/duckduckgo/DuckduckgoPage')
 
 Given('I go to the Duckduckgo page', () => {
   this.page = new DuckDuckGoPage()
